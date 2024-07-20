@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <nav className="bg-gray-800">
+    <nav className="bg-gray-800/70 w-full">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -45,7 +45,10 @@ const Header = () => {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
             <div className=" text-white font-extrabold text-3xl ">
-              <a href="/">Shoes Shop</a>
+              <a href="/">GLASSES</a>
+            </div>
+            <div className=" text-white text-2xl uppercase">
+              <h2>Try Glasses Online</h2>
             </div>
             <div className="hidden sm:ml-6 sm:block content-center">
               <div className="flex space-x-4">
