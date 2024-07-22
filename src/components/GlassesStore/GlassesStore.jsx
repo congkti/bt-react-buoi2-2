@@ -67,7 +67,7 @@ const GlassesStore = () => {
       desc: "Light pink F4300 square lenses define these sunglasses, ending with amother of pearl effect tip. ",
     },
   ];
-  const [matKinh, setMatKinh] = useState([]);
+  const [matKinh, setMatKinh] = useState();
 
   return (
     <>
@@ -78,14 +78,15 @@ const GlassesStore = () => {
               <img src="./glassesImage/model.jpg" />
             </div>
 
-            <div className="glasses">
-              <img className="glasses_img" src={matKinh.url} />
-
-              <div className="glasses_content">
-                <h3>{matKinh.name}</h3>
-                <p>{matKinh.desc}</p>
+            {matKinh && (
+              <div className="glasses">
+                <img className="glasses_img" src={matKinh.url} />
+                <div className="glasses_content">
+                  <h3>{matKinh.name}</h3>
+                  <p>{matKinh.desc}</p>
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
         <div className="glasses_navButtons">
